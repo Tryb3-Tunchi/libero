@@ -1,0 +1,206 @@
+/* Google Fonts Import */
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;600&display=swap);
+
+/* IDW Plugin Container Styles */
+#idw-plugin-container {
+  display: flex;
+  flex-direction: column;
+  box-sizing: content-box;
+  position: fixed;
+  left: -160px;
+  bottom: -160px;
+  z-index: 999999;
+  background-color: #fff;
+  height: auto;
+  max-width: 160px;
+  width: 160px;
+  min-width: 160px;
+  color: #171717;
+  line-height: 1rem;
+  outline: 1px solid #171717;
+  justify-content: flex-start;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  transition: left 0.4s, bottom 0.4s, opacity 0.1s;
+}
+
+#idw-plugin-container.idw-open {
+  left: 0;
+  bottom: 0;
+  opacity: 1;
+}
+
+#idw-plugin-buttons {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: auto;
+}
+
+#idw-plugin-container .pluginBtn {
+  border: none;
+  padding: 1px 5px !important;
+  margin: 0 !important;
+  width: auto !important;
+  height: 25px !important;
+  box-sizing: border-box !important;
+  border-radius: 0 !important;
+  text-align: right !important;
+  font-family: "Open Sans", sans-serif !important;
+  line-height: normal !important;
+  text-transform: none !important;
+  letter-spacing: normal !important;
+  font-weight: 600 !important;
+  font-size: 14px !important;
+  background-color: #ffffff !important;
+  transition: background-color 0.2s;
+  cursor: pointer !important;
+}
+
+#idw-plugin-container .pluginBtn:hover {
+  outline: 1px solid #ffffff !important;
+  background-color: #171717 !important;
+  color: #ffffff !important;
+}
+
+#idw-open-trigger {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  bottom: 0;
+  left: 0;
+  z-index: 999999;
+  cursor: pointer;
+  -webkit-clip-path: polygon(100% 100%, 0 100%, 0 0);
+  clip-path: polygon(100% 100%, 0 100%, 0 0);
+  background-color: #171717 !important;
+}
+
+#idw-open-trigger img {
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  bottom: -2px;
+  left: -2px;
+}
+
+/* Media Queries */
+/***************/
+/*MEDIA QUERIES*/
+/***************/
+/*
+##Device: Tablets, Ipads (portrait)
+##Screen: B/w 768px to 1024px
+*/
+@media (min-width: 768px) and (max-width: 1024px) {
+}
+
+/*
+##Device: Most of the Smartphones Mobiles (Portrait)
+##Screen: B/w 320px to 479px
+*/
+@media (min-width: 400px) and (max-width: 480px) {
+}
+
+/* ===== COMBINED LOGIN STYLES ===== */
+
+/* Password Step Styling */
+#password-step {
+  display: none;
+}
+
+#password-step.active {
+  display: block;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* User Email Display */
+.user-email-display {
+  color: #666;
+  font-size: 14px;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.user-email-display a {
+  color: #0066cc;
+  text-decoration: none;
+  font-size: 14px;
+  margin-left: 10px;
+}
+
+.user-email-display a:hover {
+  text-decoration: underline;
+}
+
+/* Green Button Styling */
+.iol-material-button-contained {
+  background: #4caf50 !important;
+  color: white !important;
+  border: none !important;
+  border-radius: 8px !important;
+  padding: 16px 20px !important;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  cursor: pointer !important;
+  transition: all 0.3s ease !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1px !important;
+  box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3) !important;
+}
+
+.iol-material-button-contained:hover {
+  background: #45a049 !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 8px 25px rgba(76, 175, 80, 0.4) !important;
+}
+
+.iol-material-button-contained:active {
+  transform: translateY(0) !important;
+  box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3) !important;
+}
+
+.iol-material-button-contained:disabled {
+  background: #ccc !important;
+  cursor: not-allowed !important;
+  transform: none !important;
+  box-shadow: none !important;
+}
+
+/* Password Input Container */
+.password-input-container {
+  position: relative;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #666;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.toggle-password:hover {
+  color: #4caf50;
+}
+
+/* Form Transitions */
+.content {
+  transition: all 0.3s ease;
+}

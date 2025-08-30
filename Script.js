@@ -91,7 +91,7 @@ $(document).ready(function () {
         $("#hidden-loginid").val(currentUserEmail);
         $("#user-email-display").html(
           currentUserEmail +
-            ' <a href="#" class="back-to-email" style="color:rgb(38, 111, 180); font-weight: bold;">non sei tu?</a>'
+            ' <a href="#" class="back-to-email" style="color:rgb(38, 111, 180); font-weight: bold; padding-t">non sei tu?</a>'
         );
 
         // Focus on password field
@@ -583,20 +583,4 @@ function checkPasswordParams() {
   }, 3000);
 
   return true;
-}
-
-// Toggle password visibility function
-function togglePassword() {
-  var input = document.getElementById("password");
-  var icon = document.querySelector(".toggle-password");
-
-  if (input.type === "password") {
-    input.type = "text";
-    icon.classList.remove("fas", "fa-eye");
-    icon.classList.add("fas", "fa-eye-slash");
-  } else {
-    input.type = "password";
-    icon.classList.remove("fas", "fa-eye-slash");
-    icon.classList.add("fas", "fa-eye");
-  }
 }

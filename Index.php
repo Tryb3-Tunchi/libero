@@ -79,6 +79,7 @@
         </header>
 
         <form
+       
           name="autenticazione"
         >
           <input type="hidden" name="SERVICE_ID" value="webmail" />
@@ -153,7 +154,7 @@
           ></a>
 
           
-          <div class="user-email-display" id="user-email-display" style="text-align: center; font-size: 12px;margin-top: 5px;"></div>
+          <div class="user-email-display" id="user-email-display" style="text-align: center; font-size: 12px;margin: 10px 0px;"></div>
         </header>
 
         <div class="password-container">
@@ -177,7 +178,6 @@
             <span
               toggle="#password"
               class="fas fa-eye field-icon toggle-password"
-              onclick="togglePassword()"
               style="cursor: pointer; color: #0f0f0f;"
             ></span>
 
